@@ -286,8 +286,9 @@ mark {
     background-color: #fff59d;
 }
 
-b {
+small {
     display: block;
+    font-size: 1rem;
     color: #6a7376;
     background-color: #e4e8eb80;
     font-weight: normal;

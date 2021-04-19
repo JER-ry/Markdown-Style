@@ -257,18 +257,6 @@ blockquote:before {
     height: 1em;
 }
 
-blockquote:after {
-    content: "”";
-    font-family: "serif";
-    font-weight: bold;
-    font-size: 3.5em;
-    color: #263238;
-    display: block;
-    margin: -1.4rem -2.9rem -2rem auto;
-    width: 1em;
-    height: 1em;
-}
-
 blockquote {
     font-family: "serif-n", "serif";
     font-size: 1.2em;

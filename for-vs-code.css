@@ -140,7 +140,7 @@
 
 body {
     font-family: "sans-n", "sans";
-    color: #212121;
+    color: #000000;
     font-size: 18px;
 }
 
@@ -159,7 +159,7 @@ h6 {
     margin-bottom: 1rem;
     font-weight: bold;
     line-height: 1.4;
-    color: #212121;
+    color: #000000;
 }
 
 h1 {

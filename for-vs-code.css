@@ -192,7 +192,7 @@ h1 {
     font-family: "serif-h", "serif";
     padding-top: 0.3em;
     font-size: 3.3em;
-    border-top: 1.5px solid #37474F;
+    !important border-top: 1.5px solid #37474F;
     border-bottom: none;
 }
 
@@ -369,12 +369,6 @@ small {
     background-color: #e4e8eb80;
     font-weight: normal;
     padding: 0.5rem 0.8rem;
-}
-
-@media only screen {
-    small {
-        margin-bottom: -1.4rem;
-    }
 }
 
 /*TODO LIST------------------------*/

@@ -1,3 +1,5 @@
+/*FONTS------------------------*/
+
 @font-face {
     font-family: "sans";
     font-style: normal;
@@ -11,6 +13,7 @@
     font-weight: bold;
     src: local("思源黑体 Heavy");
 }
+
 
 @font-face {
     font-family: "serif";
@@ -46,6 +49,7 @@
     font-weight: normal;
     src: local("Open Sans Italic");
 }
+
 
 @font-face {
     font-family: "sans-n";
@@ -110,6 +114,7 @@
     src: local("Merriweather Head Bold Italic");
 }
 
+
 @font-face {
     font-family: "code";
     font-style: normal;
@@ -138,10 +143,33 @@
     src: local("Source Code Pro Black Italic");
 }
 
+/*EDITOR------------------------*/
+
+#write {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+    #write {
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #write {
+        max-width: 1200px;
+    }
+}
+
+/*MAIN------------------------*/
+
 body {
     font-family: "sans-n", "sans";
     color: #000000;
-    font-size: 18px;
+    line-height: 1.6;
 }
 
 a {
@@ -154,27 +182,27 @@ h3,
 h4,
 h5,
 h6 {
-    position: relative;
-    margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    line-height: 1.4;
     color: #000000;
 }
 
 h1 {
+    margin-top: 1rem;
     font-family: "serif-h", "serif";
     padding-top: 0.3em;
-    font-size: 3.3em !important;
-    border-top: 1.5px solid #37474f !important;
+    font-size: 3.3em;
+    border-top: 1.5px solid #37474F;
     border-bottom: none;
 }
 
 h2 {
+    margin-top: 1rem;
     font-family: "serif-h", "serif";
     padding-top: 0.3em;
-    font-size: 2.6em !important;
+    font-size: 2.6em;
     border-top: 1.5px solid #607d8b;
+    border-bottom: none;
 }
 
 h3:before {
@@ -187,8 +215,10 @@ h3:before {
 }
 
 h3 {
+    margin-top: 0.6rem;
     font-family: "serif-h", "serif";
-    font-size: 2em !important;
+    font-size: 2em;
+    border-bottom: none;
 }
 
 h4:before {
@@ -201,8 +231,10 @@ h4:before {
 }
 
 h4 {
+    margin-top: 0.6rem;
     font-family: "serif-h", "serif";
-    font-size: 1.6em !important;
+    font-size: 1.6em;
+    border-bottom: none;
 }
 
 h5:before {
@@ -215,8 +247,9 @@ h5:before {
 }
 
 h5 {
+    margin-top: 0.6rem;
     font-family: "sans-n", "sans";
-    font-size: 1.3em !important;
+    font-size: 1.3em;
     padding-left: 1.5em;
 }
 
@@ -230,8 +263,9 @@ h6:before {
 }
 
 h6 {
+    margin-top: 0.6rem;
     font-family: "sans-n", "sans";
-    font-size: 1.1em !important;
+    font-size: 1.1em;
     padding-left: 1.5em;
 }
 
@@ -274,23 +308,20 @@ mark {
     background-color: #fff59d;
 }
 
-small {
-    display: block;
-    font-size: 1em;
-    color: #6a7376;
-    background-color: #e4e8eb80;
-    font-weight: normal;
-    padding: 0.5em 0.8em;
-}
-
 table tr {
-    border-top: 1px solid #b0bec5;
+    border-top: 0.6px solid #37474F;
     margin: 0;
     padding: 0;
 }
 
-table th {
+table tr:last-child {
+    border-bottom: 0.6px solid #37474F;
+}
+
+table th,
+table td {
     font-weight: normal;
+    padding: 6px 13px;
 }
 
 table tr:nth-child(2n),
@@ -301,4 +332,99 @@ thead {
 code,
 tt {
     font-family: "code";
+    background-color: #f8f8f8;
+    border: none;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+    margin: 0.5rem 0;
+}
+
+li>ol,
+li>ul {
+    margin: 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: none;
+    box-sizing: content-box;
+}
+
+/*SMALL------------------------*/
+
+small {
+    display: block;
+    font-size: 1rem;
+    font-family: "sans-n", "sans";
+    color: #6a7376;
+    background-color: #e4e8eb80;
+    font-weight: normal;
+    padding: 0.5rem 0.8rem;
+}
+
+@media only screen {
+    small {
+        margin-bottom: -1.4rem;
+    }
+}
+
+/*TODO LIST------------------------*/
+
+/*Modified from Pixyll, a theme for Typora.*/
+.md-task-list-item>input {
+    -webkit-appearance: initial;
+}
+
+.md-task-list-item>input:before {
+    border: 1px solid #37474F;
+    border-radius: 0.95rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    background: #fff;
+    content: ' ';
+    transition: background-color 200ms ease-in-out;
+    display: block;
+    margin: -0.18rem auto auto auto;
+}
+
+.md-task-list-item>input:checked:before,
+.md-task-list-item>input[checked]:before {
+    background: #37474F;
+    border-width: 2px;
+    margin: -0.18rem auto auto auto;
+    transition: background-color 200ms ease-in-out;
+}
+
+.md-task-list-item>input:checked:after,
+.md-task-list-item>input[checked]:after {
+    opacity: 1;
+}
+
+.md-task-list-item>input:after {
+    opacity: 1;
+    -webkit-transition: opacity 0.05s ease-in-out;
+    -moz-transition: opacity 0.05s ease-in-out;
+    transition: opacity 0.05s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    left: 0.07rem;
+    width: 0.9rem;
+    height: 0.4rem;
+    border: 3px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    content: ' ';
+    opacity: 0;
 }

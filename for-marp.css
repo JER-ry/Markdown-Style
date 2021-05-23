@@ -239,7 +239,7 @@ blockquote:before {
 blockquote {
     padding: 1rem;
     border: none;
-    font-family: "serif-n", "serif"
+    font-family: "serif-n", "serif";
     color: #37474f;
 }
 

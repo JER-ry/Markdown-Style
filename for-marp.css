@@ -17,6 +17,21 @@
     src: local("思源黑体 Heavy");
 }
 
+
+@font-face {
+    font-family: "serif";
+    font-style: normal;
+    font-weight: normal;
+    src: local("思源宋体");
+}
+
+@font-face {
+    font-family: "serif";
+    font-style: normal;
+    font-weight: bold;
+    src: local("思源宋体 Heavy");
+}
+
 @font-face {
     font-family: "sans-n";
     font-style: normal;
@@ -47,10 +62,59 @@
 }
 
 @font-face {
-    font-family: "serif";
+    font-family: "serif-n";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Merriweather Regular");
+}
+
+@font-face {
+    font-family: "serif-n";
     font-style: normal;
     font-weight: bold;
-    src: local("思源宋体 Heavy");
+    src: local("Merriweather Bold");
+}
+
+@font-face {
+    font-family: "serif-n";
+    font-style: italic;
+    font-weight: normal;
+    src: local("Merriweather Italic");
+}
+
+@font-face {
+    font-family: "serif-n";
+    font-style: italic;
+    font-weight: bold;
+    src: local("Merriweather Bold Italic");
+}
+
+@font-face {
+    font-family: "serif-h";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Merriweather Head");
+}
+
+@font-face {
+    font-family: "serif-h";
+    font-style: normal;
+    font-weight: bold;
+    src: local("Merriweather Head Bold");
+}
+
+@font-face {
+    font-family: "serif-h";
+    font-style: italic;
+    font-weight: normal;
+    src: local("Merriweather Head Italic");
+}
+
+@font-face {
+    font-family: "serif-h";
+    font-style: italic;
+    font-weight: bold;
+    src: local("Merriweather Head Bold Italic");
 }
 
 :root {
@@ -132,7 +196,6 @@ h5 {
     font-size: 1.3em;
     color: #000000;
     padding-left: 1.5em;
-    font-family: "sans";
 }
 
 h6:before {
@@ -150,7 +213,6 @@ h6 {
     font-size: 1.1em;
     color: #000000;
     padding-left: 1.5em;
-    font-family: "sans";
 }
 
 hr {
@@ -178,7 +240,7 @@ blockquote:before {
 blockquote {
     padding: 1rem;
     border: none;
-    font-family: "serif-h", "serif"
+    font-family: "serif-n", "serif"
     color: #37474f;
 }
 

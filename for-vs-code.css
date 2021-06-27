@@ -171,7 +171,7 @@ h1 {
     font-family: "serif-h", "serif";
     padding-top: 0.3em;
     font-size: 3.3em;
-    border-top: 1.5px solid #37474F !important;
+    border-top: 1.5px solid #37474F;
     border-bottom: none;
 }
 
@@ -219,7 +219,7 @@ h4 {
 h5:before {
     content: "";
     display: block;
-    margin: 1.66em auto -1.16em -1.5em;
+    margin: 1.74em auto -1.3em -1.5em;
     width: 1em;
     height: 0;
     border-bottom: 1em solid #37474f;
@@ -235,7 +235,7 @@ h5 {
 h6:before {
     content: "";
     display: block;
-    margin: 1.66em auto -1.16em -1.5em;
+    margin: 1.74em auto -1.3em -1.5em;
     width: 1em;
     height: 0;
     border-bottom: 1em solid #607d8b;

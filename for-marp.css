@@ -141,21 +141,12 @@ h1 {
     margin-top: 1rem;
     font-family: "serif-h", "serif";
     padding-top: 0.3em;
-    font-size: 3.3em;
+    font-size: 2em;
     border-top: 1.5px solid #37474F;
     border-bottom: none;
 }
 
-h2 {
-    margin-top: 1rem;
-    font-family: "serif-h", "serif";
-    padding-top: 0.3em;
-    font-size: 2.6em;
-    border-top: 1.5px solid #607d8b;
-    border-bottom: none;
-}
-
-h3:before {
+h2:before {
     content: "";
     display: block;
     margin: 1em auto 0.2em 0;
@@ -164,30 +155,14 @@ h3:before {
     border-bottom: 1rem solid #37474f;
 }
 
-h3 {
-    margin-top: 0.6rem;
-    font-family: "serif-h", "serif";
-    font-size: 2em;
-    border-bottom: none;
-}
-
-h4:before {
-    content: "";
-    display: block;
-    margin: 1em auto 0.3em 0;
-    width: 2rem;
-    height: 0;
-    border-bottom: 1rem solid #607d8b;
-}
-
-h4 {
+h2 {
     margin-top: 0.6rem;
     font-family: "serif-h", "serif";
     font-size: 1.6em;
     border-bottom: none;
 }
 
-h5:before {
+h3:before {
     content: "";
     display: block;
     margin: 1.74em auto -1.3em -1.5em;
@@ -196,14 +171,14 @@ h5:before {
     border-bottom: 1em solid #37474f;
 }
 
-h5 {
+h3 {
     margin-top: 0.6rem;
     font-family: "sans-n", "sans";
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-left: 1.5em;
 }
 
-h6:before {
+h4:before {
     content: "";
     display: block;
     margin: 1.74em auto -1.3em -1.5em;
@@ -212,11 +187,23 @@ h6:before {
     border-bottom: 1em solid #607d8b;
 }
 
-h6 {
+h4 {
     margin-top: 0.6rem;
     font-family: "sans-n", "sans";
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding-left: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+    border-bottom: none;
+    color: #37474f;
+}
+
+h6 {
+    font-size: 1em;
+    border-bottom: none;
+    color: #607d8b;
 }
 
 hr {

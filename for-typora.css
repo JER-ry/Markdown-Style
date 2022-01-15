@@ -62,7 +62,7 @@
     font-family: "serif-n";
     font-style: normal;
     font-weight: normal;
-    src: local("Merriweather Regular");
+    src: local("Merriweather");
 }
 
 @font-face {
@@ -364,7 +364,8 @@ small {
     small {
         margin-bottom: -1.4rem;
     }
-    small small{
+
+    small small {
         margin-bottom: 0;
     }
 }
